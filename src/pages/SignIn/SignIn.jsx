@@ -3,6 +3,7 @@ import SignInLogo from '../../assets/Animation - 1748286893732.json'
 import { use } from 'react';
 import { AuthContext } from '../../Context/AuthContext/AuthContext';
 import { Link } from 'react-router';
+import SocialLogin from '../Social/SocialLogin';
 
 const SignIn = () => {
 
@@ -44,6 +45,7 @@ const SignIn = () => {
                                    <button className="btn btn-neutral mt-4">Sign-In</button>
                                    <p className='font-medium mt-3 text-center'>You don't hane an account. <Link className='text-blue-700' to='/register'>Register</Link></p>
                               </form>
+                              <SocialLogin></SocialLogin>
                          </div>
                     </div>
                </div>

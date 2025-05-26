@@ -4,7 +4,7 @@ import { AuthContext } from '../../Context/AuthContext/AuthContext';
 
 const NavBar = () => {
 
-     const {user}=use(AuthContext);
+     const {user, signOutUser}=use(AuthContext);
 
      const links = <>
           <li><NavLink to='/'>Home</NavLink></li>
@@ -12,6 +12,11 @@ const NavBar = () => {
      </>
 
      const handleSignOut= ()=>{
+          signOutUser().then(()=>{
+               console.log('Sign Out sucssefully')
+          }).catch(error => {
+               console.log(error.message)
+          });
           
      }
      return (

@@ -3,6 +3,7 @@ import registerLogo from '../../assets/Animation - 1748276785447.json'
 import { use } from 'react';
 import { AuthContext } from '../../Context/AuthContext/AuthContext';
 import { Link } from 'react-router';
+import SocialLogin from '../Social/SocialLogin';
 
 const Register = () => {
 
@@ -42,6 +43,7 @@ const Register = () => {
               <button className="btn btn-neutral mt-4">Register</button>
               <p className='font-medium mt-3 text-center'>Already hane an account. <Link className='text-blue-700' to='/signIn'>SignIn</Link></p>
             </form>
+            <SocialLogin></SocialLogin>
           </div>
         </div>
       </div>
